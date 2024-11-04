@@ -1,0 +1,21 @@
+.cart{
+    position:fixed;
+    top:0;
+    right:0;
+    background-color:#eee4e0;
+    height:100%;
+    z-index:100;
+    width:30%;
+}
+
+.cart-header-text p{
+    font-family: "Amatic SC", sans-serif;
+    font-size:20px;
+    font-weight:400;
+}   
+
+.cart-header-text span{
+    font-family: "Raleway", sans-serif;
+    font-size:16px;
+    font-weight:400;
+}   

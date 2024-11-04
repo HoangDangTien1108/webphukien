@@ -1,0 +1,50 @@
+.homepage {
+  width: 100%;
+  padding-top: 10px;
+}
+
+.homepage img {
+  width: 100%;
+}
+
+.homepage-introduct {
+  position: relative;
+}
+
+.introduct-text {
+  position: absolute;
+  width: 25%;
+  height: 50%;
+  top: 24%;
+  right: 3%;
+}
+
+.introduct-text span {
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: white;
+  line-height:30px;
+}
+
+.introduct-text p {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 80px;
+  font-weight: 400;
+  color: white;
+  white-space: nowrap;
+  line-height:70px;
+}
+
+.introduct-text button {
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height:15px;
+  color: #493c36;
+}
+
+.introduct-text button:hover {
+  color: white;
+  transition: 0.5s;
+}

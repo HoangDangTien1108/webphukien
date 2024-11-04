@@ -1,23 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import Cart from "./components/Cart";
+import Content from "./components/Content";
+import Header from "./components/Header";
+import Login from "./components/Login";
 
 function App() {
+  const [openCart, setOpenCart] = useState(false);
+  const [openLogin, setOpenLogin] = useState(false);
+
+  const handleOpenCart = () => {
+    setOpenCart(true);
+  };
+
+  const handleCloseCartOrLogin = () => {
+    setOpenCart(false);
+    setOpenLogin(false);
+  };
+
+  const handleOpenLogin = () => {
+    setOpenLogin(true);
+  };
+
+  console.log(openCart);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      className="App"
+      style={{
+        backgroundColor:openCart ? "#b2a8a5" : "#eee4e0",
+      }}
+    >
+      <Header isOpenCart={handleOpenCart} isOpenLogin={handleOpenLogin} />
+      <Cart openCart={openCart} closeCard={handleCloseCartOrLogin} />
+      <Login openLogin={openLogin} closeLogin={handleCloseCartOrLogin} />
+      <Content isOpenCart={openCart}/>
     </div>
   );
 }
