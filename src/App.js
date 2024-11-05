@@ -1,9 +1,9 @@
 import { useState } from "react";
 import "./App.css";
 import Cart from "./components/Cart";
-import Content from "./components/Content";
 import Header from "./components/Header";
 import Login from "./components/Login";
+import Content from "./components/Content";
 
 function App() {
   const [openCart, setOpenCart] = useState(false);
@@ -31,7 +31,7 @@ function App() {
         backgroundColor:openCart ? "#b2a8a5" : "#eee4e0",
       }}
     >
-      <Header isOpenCart={handleOpenCart} isOpenLogin={handleOpenLogin} />
+      <Header isOpenCart={handleOpenCart} isOpenLogin={handleOpenLogin}/>
       <Cart openCart={openCart} closeCard={handleCloseCartOrLogin} />
       <Login openLogin={openLogin} closeLogin={handleCloseCartOrLogin} />
       <Content isOpenCart={openCart}/>

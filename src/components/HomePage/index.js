@@ -1,10 +1,9 @@
 import "./style.css";
 import homeImage from "../../assets/images/home.jpg";
-import { useDispatch } from "react-redux";
-import { productList } from "../../redux/actions";
+import { useNavigate } from "react-router-dom";
 
 const HomePage = () => {
-    const dispatch = useDispatch();
+  const navigate = useNavigate();
   return (
     <>
       <div className="homepage">
@@ -14,8 +13,19 @@ const HomePage = () => {
             <span>NEW</span>
             <p>FOR FALL</p>
             <div className="h-[2px] w-[10%] bg-white my-3"></div>
-            <button onClick={() => dispatch(productList())} style={{transition:'1s'}}>SHOP NOW &gt;</button>
+            <button
+              onClick={() => {
+                navigate("/shopall");
+              }}
+            >
+              SHOP NOW &gt;
+            </button>
           </div>
+        </div>
+        <div className="homepage-image">
+          <div className="homepage-image-button"></div>
+          <div className="homepage-image-button"></div>
+          <div className="homepage-image-button"></div>
         </div>
       </div>
     </>

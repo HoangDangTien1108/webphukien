@@ -51,8 +51,8 @@
 .login-info button{
     white-space:nowrap;
     font-size:12px;
-    padding-right:34px;
     color:#4593f8;
+    padding-top:3px;
 }
 
 .login-signin{

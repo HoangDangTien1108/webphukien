@@ -3,7 +3,7 @@
 }
 
 .header h1 {
-  font-family: "Caveat", cursive;
+  font-family: "Amatic SC", sans-serif;
   font-size: 50px;
   font-weight: 400;
 }
@@ -13,18 +13,18 @@
   font-family: "Raleway", sans-serif;
 }
 
+.nav-user span:hover {
+  color: #bba0a6;
+  transition: 0.2s;
+}
+
 .nav-menu {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   font-weight: 400;
 }
 
-.nav-user span:hover {
-  color: #bba0a6;
-  transition: 0.2s;
-}
-
-.nav-menu button:hover {
+.nav-menu li:hover {
   color: #bba0a6;
   transition: 0.4s;
 }

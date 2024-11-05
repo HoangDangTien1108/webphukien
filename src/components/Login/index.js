@@ -18,7 +18,11 @@ const Login = ({ openLogin, closeLogin }) => {
           </button>
           <div className="login-content flex flex-col items-center gap-3">
             <div className="flex flex-col gap-4">
-              <FontAwesomeIcon icon={faSnowflake} color="" size="3x" />
+              <FontAwesomeIcon
+                icon={faSnowflake}
+                style={{ color: "#E6F7FF" }}
+                size="3x"
+              />
               <span>
                 {typeLogin
                   ? "Create account to Skibidi Snow"
@@ -28,14 +32,14 @@ const Login = ({ openLogin, closeLogin }) => {
             <div className="w-full flex flex-col items-center gap-5">
               <div className="login-info">
                 <p>Name</p>
-                <input></input>
+                <input type="text"></input>
               </div>
-              <div className="login-info">
-                <div className="flex justify-between items-center">
+              <div className="login-info flex flex-col-reverse">
+                <input type="password"></input>
+                <div className="flex justify-center">
                   <p>Password</p>
                   <button>{typeLogin ? "" : "Forgot password?"}</button>
                 </div>
-                <input></input>
               </div>
               <div className="login-signin">
                 <button>{typeLogin ? "Create account" : "Sign in"}</button>
