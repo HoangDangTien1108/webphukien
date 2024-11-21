@@ -8,6 +8,15 @@ import {
 import { Link } from "react-router-dom";
 
 const Header = ({ isOpenCart, isOpenLogin }) => {
+  // const [colorItem, setColorItem] = useState("HOME");
+
+  // const liItem = document.getElementsByClassName("my-link");
+  // const handleSetColorLink = () => {
+  //   for (let i = 0; i < liItem.length; i++) {
+  //     console.log(liItem);
+  //   }
+  // };
+
   return (
     <>
       <div className="header">
@@ -36,20 +45,30 @@ const Header = ({ isOpenCart, isOpenLogin }) => {
           </button>
           <nav className="nav-menu flex self-end justify-center">
             <ul className="flex gap-9 pr-4">
-              <li style={{ color: "#a98b92" }}>
-                <Link to="/">HOME</Link>
+              <li className="my-link">
+                <Link className="link" to="/">
+                  HOME
+                </Link>
               </li>
-              <li>
-                <Link to="/shopall">SHOP ALL</Link>
+              <li className="my-link">
+                <Link className="link" to="/shopall">
+                  SHOP ALL
+                </Link>
               </li>
-              <li>
-                <Link to="/sale">SALE</Link>
+              <li className="my-link">
+                <Link className="link" to="/sale">
+                  SALE
+                </Link>
               </li>
-              <li>
-                <Link to="/faq">FAQ</Link>
+              <li className="my-link">
+                <Link className="link" to="/faq">
+                  FAQ
+                </Link>
               </li>
-              <li>
-                <Link to="/contactus">CONTACT US</Link>
+              <li className="my-link">
+                <Link className="link" to="/contactus">
+                  CONTACT US
+                </Link>
               </li>
             </ul>
           </nav>
